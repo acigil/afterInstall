@@ -42,6 +42,8 @@ dont foget
 
 
 
+
+
 #aliass
 
 #SysTem
@@ -74,6 +76,11 @@ alias gpush='git add . && git commit -m "first Commit" && git push origin master
 alias ping='ping -c 5'
 alias showip='ifconfig'
 
+#Network Things
+alias ping='ping -c 5'
+alias showip='ifconfig'
+
+# youtube-dl
 #audio
 alias dlmp3='youtube-dl -f "bestaudio/best[height<=480]" --extract-audio --audio-format mp3 -i -o "%(title)s.%(ext)s"'
 #one video
@@ -85,49 +92,3 @@ alias dlsortedBestVideoSound-pl='youtube-dl -f bestvideo+bestaudio/best -i -o "%
 alias dlsortedHighMp4-pl='youtube-dl -f bestvideo[ext!=webm]‌​+bestaudio/best -i -o "%(playlist_index)s-%(title)s.%(ext)s"'
 alias dlhigh-pl='youtube-dl -f bestvideo​+bestaudio/best -i -o "%(title)s.%(ext)s"'
 alias dlhighMp4-pl='youtube-dl -f bestvideo[ext!=webm]‌​+bestaudio/best -i -o "%(title)s.%(ext)s"'
-
-
-
-#aliass
-
-#SysTem
-alias up='sudo apt update && sudo apt upgrade -y'
-alias clean='sudo apt-get autoclean && sudo apt-get clean && sudo apt-get autoremove'
-alias install='sudo apt install'
-alias remove='sudo apt remove'	
-
-
-# pythin conda alias
-alias sconda='conda config --show | grep auto_activate_base'
-alias aconda='conda config --set auto_activate_base True && source ~/.bashrc'
-alias dconda='conda config --set auto_activate_base False && source ~/.bashrc'
-alias jrun='jupyter-notebook'
-
-
-# GeeK AliAs
-alias ..='cd ..'
-alias ...='cd ../../../'
-alias ....='cd ../../../../'
-alias .....='cd ../../../../'
-alias .4='cd ../../../../'
-alias .5='cd ../../../../..'
-
-
-#git 
-alias gpush='git add . && git commit -m "first Commit" && git push origin master'
-
-#Network Things
-alias ping='ping -c 5'
-alias showip='ifconfig'
-
-#audio
-alias dlmp3='youtube-dl -f "bestaudio/best[height<=480]" --extract-audio --audio-format mp3 -i -o "%(title)s.%(ext)s"'
-#one video
-alias dloneVideoHigh='youtube-dl -f bestvideo​+bestaudio/best -i -o "%(title)s.%(ext)s"'
-alias dloneVideoHighMp4='youtube-dl -f bestvideo​[ext!=webm]‌​+bestaudio/best -i -o "%(title)s.%(ext)s"'
-#playList
-alias dlsortedpl='youtube-dl -f bestvideo+bestaudio -i -o "%(playlist_index)s-%(title)s.%(ext)s"'
-alias dlsortedbestvideosoundpl='youtube-dl -f bestvideo+bestaudio/best -i -o "%(playlist_index)s-%(title)s.%(ext)s"'
-alias dlsortedhighmp4pl='youtube-dl -f bestvideo[ext!=webm]‌​+bestaudio/best -i -o "%(playlist_index)s-%(title)s.%(ext)s"'
-alias dlhighpl='youtube-dl -f bestvideo​+bestaudio/best -i -o "%(title)s.%(ext)s"'
-alias dlhighmp4pl='youtube-dl -f bestvideo[ext!=webm]‌​+bestaudio/best -i -o "%(title)s.%(ext)s"'
