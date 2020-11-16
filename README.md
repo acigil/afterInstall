@@ -82,13 +82,13 @@ alias showip='ifconfig'
 
 # youtube-dl
 #audio
-alias dlmp3='youtube-dl -f "bestaudio/best[height<=480]" --extract-audio --audio-format mp3 -i -o "%(title)s.%(ext)s"'
+alias dlmp3='youtube-dl --no-check-certificate -f "bestaudio/best[height<=480]" --extract-audio --audio-format mp3 -i -o "%(title)s.%(ext)s"'
 #one video
-alias dloneVideoHigh='youtube-dl -f bestvideo​+bestaudio/best -i -o "%(title)s.%(ext)s"'
-alias dloneVideoHighMp4='youtube-dl -f bestvideo​[ext!=webm]‌​+bestaudio/best -i -o "%(title)s.%(ext)s"'
+alias dloneVideoHigh='youtube-dl --no-check-certificate  -f bestvideo​+bestaudio/best -i -o "%(title)s.%(ext)s"'
+alias dloneVideoHighMp4='youtube-dl --no-check-certificate  -f bestvideo​[ext!=webm]‌​+bestaudio/best -i -o "%(title)s.%(ext)s"'
 #playList
-alias dlsorted-pl='youtube-dl -f bestvideo+bestaudio -i -o "%(playlist_index)s-%(title)s.%(ext)s"'
-alias dlsortedBestVideoSound-pl='youtube-dl -f bestvideo+bestaudio/best -i -o "%(playlist_index)s-%(title)s.%(ext)s"'
-alias dlsortedHighMp4-pl='youtube-dl -f bestvideo[ext!=webm]‌​+bestaudio/best -i -o "%(playlist_index)s-%(title)s.%(ext)s"'
-alias dlhigh-pl='youtube-dl -f bestvideo​+bestaudio/best -i -o "%(title)s.%(ext)s"'
-alias dlhighMp4-pl='youtube-dl -f bestvideo[ext!=webm]‌​+bestaudio/best -i -o "%(title)s.%(ext)s"'
+alias dlsorted-pl='youtube-dl --no-check-certificate  -f bestvideo+bestaudio -i -o "%(playlist_index)s-%(title)s.%(ext)s"'
+alias dlsortedBestVideoSound-pl='youtube-dl --no-check-certificate  -f bestvideo+bestaudio/best -i -o "%(playlist_index)s-%(title)s.%(ext)s"'
+alias dlsortedHighMp4-pl='youtube-dl --no-check-certificate  -f bestvideo[ext!=webm]‌​+bestaudio/best -i -o "%(playlist_index)s-%(title)s.%(ext)s"'
+alias dlhigh-pl='youtube-dl --no-check-certificate  -f bestvideo​+bestaudio/best -i -o "%(title)s.%(ext)s"'
+alias dlhighMp4-pl='youtube-dl --no-check-certificate  -f bestvideo[ext!=webm]‌​+bestaudio/best -i -o "%(title)s.%(ext)s"'
